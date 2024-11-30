@@ -145,7 +145,7 @@ public class MainTest {
         Contact contact = new Contact("Test", "12345678");
         mobilePhone.addNewContact(new Contact("Test", "12345678"));
 
-        assertEquals(mobilePhone.findContact(contact), 3);
+        assertEquals(mobilePhone.findContact(String.valueOf(contact)), 3);
     }
 
     @DisplayName("findContact(String) methodu doğru çalışıyor mu?")
